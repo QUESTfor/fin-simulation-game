@@ -3218,7 +3218,7 @@ def admin_events_page():
 
     if event_choice == "Card I: Trade War":
         st.markdown("### 🌍 Card I: Trade War")
-
+        st.image(tariff_image_path, caption="全球貿易戰", use_container_width=True)
         st.markdown("<p style='font-size: 2.5rem;'><strong>說明：</strong>美國總統川普發動關稅貿易戰 （ประธานาธิบดีสหรัฐฯ โดนัลด์ ทรัมป์ เปิดฉากสงครามการค้าด้วยมาตรการภาษีศุลกากร）</p>", unsafe_allow_html=True)
         st.markdown("<br>", unsafe_allow_html=True)
 
@@ -3356,8 +3356,8 @@ def admin_events_page():
                     st.rerun()
     elif event_choice == "Card V: Car Accident":
       st.markdown("### 🦴 Card V: Car Accident")
-
-      
+    
+      st.image(car_image_path, caption="Car accident", use_container_width=True)    
       st.markdown( "<p style='font-size: 2.5rem;'><b>說明：</b>你遭遇車禍，下個月將無法工作。（คุณประสบอุบัติเหตุทางรถยนต์ ทำให้คุณไม่สามารถทำงานได้ในเดือนหน้า）</p>", unsafe_allow_html=True )
       st.markdown("<br>", unsafe_allow_html=True)
 
