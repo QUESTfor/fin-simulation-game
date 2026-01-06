@@ -3179,7 +3179,7 @@ def admin_events_page():
         st.markdown("### 🌍 Card I: Trade War")
 
         # Display image
-        if tariff_image_exists:
+        if tariff_image_path:
             st.image(tariff_image_path, caption="Global Trade War", use_container_width=True)
         else:
             st.warning(f"⚠️ Image not found at: {tariff_image_path}")
