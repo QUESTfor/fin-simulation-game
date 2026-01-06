@@ -3198,12 +3198,10 @@ def admin_events_page():
     game_state = get_game_state()
     all_players = get_all_players()
     
-    import os  # ← Add this
     
-    tariff_image_path = 'images/tariff.png'
-    jason_image_path = 'images/jason dad.png'
-    early_election_image_path = 'images/early election.png'
-    car_image_path = 'images/car.jpg'
+    tariff_image_path = 'https://raw.githubusercontent.com/QUESTfor/fin-simulation-game/main/images/tariff.png'
+    car_image_path = 'https://raw.githubusercontent.com/QUESTfor/fin-simulation-game/main/images/car.jpg'
+   
 
     st.markdown("<h1 class='center-text' style='color: white; text-shadow: 3px 3px 6px rgba(0,0,0,0.5);'>隨機事件</h1>", unsafe_allow_html=True)
 
