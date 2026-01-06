@@ -1,5 +1,5 @@
 # @title
-%%writefile app.py
+#%%writefile app.py
 import streamlit as st
 import plotly.graph_objects as go
 import random
