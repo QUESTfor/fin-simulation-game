@@ -3151,11 +3151,17 @@ def advance_month():
 def admin_events_page():
     game_state = get_game_state()
     all_players = get_all_players()
-
+    
+    import os  # ← Add this
+    
     tariff_image_path = 'images/tariff.png'
+    tariff_image_exists = os.path.exists(tariff_image_path)  # ← Add this
     jason_image_path = 'images/jason dad.png'
+    jason_image_exists = os.path.exists(jason_image_path)  # ← Add this
     early_election_image_path = 'images/early election.png'
+    early_election_image_exists = os.path.exists(early_election_image_path)  # ← Add this
     car_image_path = 'images/car.jpg'
+    car_image_exists = os.path.exists(car_image_path)  # ← Add this
 
     st.markdown("<h1 class='center-text' style='color: white; text-shadow: 3px 3px 6px rgba(0,0,0,0.5);'>隨機事件</h1>", unsafe_allow_html=True)
 
