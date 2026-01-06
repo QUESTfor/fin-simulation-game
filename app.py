@@ -374,6 +374,32 @@ st.markdown("""
         font-weight: 700;
         border: 2px solid #e53e3e;
     }
+    /* Fix input fields - white background with dark text */
+    .stTextInput>div>div>input, 
+    .stNumberInput>div>div>input,
+    .stSelectbox>div>div>select {
+        background-color: white !important;
+        color: #1a1a1a !important;
+        border: 2px solid #cbd5e0 !important;
+    }
+    
+    /* Fix password input specifically */
+    input[type="password"] {
+        background-color: white !important;
+        color: #1a1a1a !important;
+    }
+    
+    /* Fix select dropdowns */
+    .stSelectbox select {
+        background-color: white !important;
+        color: #1a1a1a !important;
+    }
+    
+    /* Fix option text in dropdowns */
+    option {
+        background-color: white !important;
+        color: #1a1a1a !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
