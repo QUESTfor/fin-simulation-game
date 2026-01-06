@@ -400,6 +400,26 @@ st.markdown("""
         background-color: white !important;
         color: #1a1a1a !important;
     }
+    /* Fix selectbox dropdown text */
+    .stSelectbox div[data-baseweb="select"] > div {
+        background-color: white !important;
+        color: #1a1a1a !important;
+    }
+    
+    /* Fix dropdown menu items */
+    .stSelectbox [role="listbox"] {
+        background-color: white !important;
+    }
+    
+    .stSelectbox [role="option"] {
+        background-color: white !important;
+        color: #1a1a1a !important;
+    }
+    
+    .stSelectbox [role="option"]:hover {
+        background-color: #f7fafc !important;
+        color: #1a1a1a !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
