@@ -3154,13 +3154,10 @@ def admin_events_page():
     
     import os  # ← Add this
     
-    st.image(tariff_image_path, caption="全球貿易戰", use_container_width=True)
-
-    st.image(jason_image_path, caption="jason_dad", use_container_width=True)
-    
-    st.image(early_election_image_path, caption="Thailand Early Election", use_container_width=True)
-    
-    st.image(car_image_path, caption="Car accident", use_container_width=True)
+    tariff_image_path = 'images/tariff.png'
+    jason_image_path = 'images/jason dad.png'
+    early_election_image_path = 'images/early election.png'
+    car_image_path = 'images/car.jpg'
 
     st.markdown("<h1 class='center-text' style='color: white; text-shadow: 3px 3px 6px rgba(0,0,0,0.5);'>隨機事件</h1>", unsafe_allow_html=True)
 
@@ -3177,12 +3174,6 @@ def admin_events_page():
 
     if event_choice == "Card I: Trade War":
         st.markdown("### 🌍 Card I: Trade War")
-
-        # Display image
-        if tariff_image_path:
-            st.image(tariff_image_path, caption="Global Trade War", use_container_width=True)
-        else:
-            st.warning(f"⚠️ Image not found at: {tariff_image_path}")
 
         st.markdown("<p style='font-size: 2.5rem;'><strong>說明：</strong>美國總統川普發動關稅貿易戰 （ประธานาธิบดีสหรัฐฯ โดนัลด์ ทรัมป์ เปิดฉากสงครามการค้าด้วยมาตรการภาษีศุลกากร）</p>", unsafe_allow_html=True)
         st.markdown("<br>", unsafe_allow_html=True)
@@ -3215,11 +3206,7 @@ def admin_events_page():
 
     elif event_choice == "Card II: NVIDIA Revolution":
         st.markdown("### 🚀 Card II: NVIDIA Revolution")
-        # Display image
-        if jason_image_exists:
-            st.image(jason_image_path, caption="jason_dad", use_container_width=True)
-        else:
-            st.warning(f"⚠️ Image not found at: {tariff_image_path}")
+        
         st.markdown("**Description:** Revolutionary super-computing technology developed by NVIDIA")
         st.markdown("<br>", unsafe_allow_html=True)
 
@@ -3284,11 +3271,7 @@ def admin_events_page():
     elif event_choice == "Card IV: House dissolved":
         st.markdown("### 🗳️ Card IV: House dissolved")
 
-        # Display image
-        if early_election_image_exists:
-            st.image(early_election_image_path, caption="Thailand Early Election", use_container_width=False, width=600)
-        else:
-            st.warning(f"⚠️ Image not found at: {early_election_image_path}")
+        
 
         st.markdown("**Description:** Prime Minister Anutin Charnvirakul moved late Thursday to dissolve parliament, setting the stage for an early election")
 
@@ -3330,11 +3313,7 @@ def admin_events_page():
     elif event_choice == "Card V: Car Accident":
       st.markdown("### 🦴 Card V: Car Accident")
 
-      # Display image
-      if car_image_exists:
-            st.image(car_image_path, caption="Car accident", use_container_width=False, width=600)
-      else:
-          st.warning(f"⚠️ Image not found at: {early_election_image_path}")
+      
       st.markdown( "<p style='font-size: 2.5rem;'><b>說明：</b>你遭遇車禍，下個月將無法工作。（คุณประสบอุบัติเหตุทางรถยนต์ ทำให้คุณไม่สามารถทำงานได้ในเดือนหน้า）</p>", unsafe_allow_html=True )
       st.markdown("<br>", unsafe_allow_html=True)
 
