@@ -1400,7 +1400,7 @@ def student_game_page():
     col_loan1, col_loan2, col_loan3 = st.columns([2, 1, 1])
 
     with col_loan1:
-        max_loan = int(player_data['total_asset'] * 0.5) - player_data.get('loan_balance', 0)
+        max_loan = int(player_data['total_asset'] * 5.0) - player_data.get('loan_balance', 0)
         if max_loan > 0:
             inv_loan = st.number_input(
                 "Borrow Amount ($)",
@@ -1411,7 +1411,7 @@ def student_game_page():
                 key="loan_input"
             )
             st.session_state.inv_loan = inv_loan  # ← Save back to session state
-            st.caption(f"💡 Max borrowing: ${max_loan:,.0f} (50% of assets)")
+            
         else:
             st.info("You've reached max loan capacity (50% of assets)")
             inv_loan = 0
